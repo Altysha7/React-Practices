@@ -5,6 +5,11 @@ import FirstBtn from './components/FirstBtn';
 import CategoryList from './components/CategoryList';
 import Electronics from './pages/Electronics';
 import Furniture from './pages/Furniture';
+import Decoration from './pages/Decoration';
+import AutoProducts from './pages/AutoProducts';
+import GardenProducts from './pages/GardenProducts';
+import Counter from './pages/Counter';
+
 
 function App() {
   const a = 5
@@ -12,6 +17,11 @@ function App() {
   console.log(a + b);
   return (
     <div className="App">
+      <Counter />
+      <Counter />
+      <Counter />
+      <Counter />
+      <Counter />
       <header className="App-header">
         <CategoryList />
         <AboutUs />
@@ -34,6 +44,9 @@ function App() {
       </header>
       <Electronics />
       <Furniture />
+      <Decoration />
+      <AutoProducts />
+      <GardenProducts />
     </div>
   );
 }

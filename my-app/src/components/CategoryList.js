@@ -10,19 +10,6 @@ const CategoryList = () => {
             { categoryName: 'Decoration', color: 'red', },
             { categoryName: 'Auto products', color: 'purple', },
             { categoryName: 'Garden products', color: 'green', },
-            { categoryName: 'electronics', color: 'blue', },
-            { categoryName: 'Furniture', color: 'gray', },
-            { categoryName: 'Decoration', color: 'red', },
-            { categoryName: 'Auto products', color: 'purple', },
-            { categoryName: 'Garden products', color: 'green', },
-            { categoryName: 'electronics', color: 'blue', },
-            { categoryName: 'Furniture', color: 'gray', },
-            { categoryName: 'Decoration', color: 'red', },
-            { categoryName: 'Auto products', color: 'purple', },
-            { categoryName: 'Garden products', color: 'green', },
-
-
-
         ]
     return (
         <div>CategoryList

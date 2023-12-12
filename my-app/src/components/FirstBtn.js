@@ -6,7 +6,7 @@ export default function FirstBtn({ color, src }) {
   // const { color, src } = props
   // console.log(props);
   return (
-    <button className='btn' style={{ background: color, fontFamily: 'inherit', border: 'none' }}>{src}</button>
+    <button key={src} className='btn' style={{ background: color, fontFamily: 'inherit', border: 'none' }}>{src}</button>
   )
 }
 
