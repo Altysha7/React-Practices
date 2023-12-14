@@ -9,46 +9,66 @@ import Decoration from './pages/Decoration';
 import AutoProducts from './pages/AutoProducts';
 import GardenProducts from './pages/GardenProducts';
 import Counter from './pages/Counter';
+import Rockpaperscissors from './pages/Rockpaperscissors';
+import {
+  createBrowserRouter,
+  Outlet,
+  RouterProvider
+} from 'react-router-dom'
+import Main from './pages/Main';
+import Layout from './components/Layout';
+
+
+
+
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Main />,
+      },
+      {
+        path: "/counter",
+        element: <Counter />,
+      },
+      {
+        path: "/electronics",
+        element: <Electronics />,
+      },
+      {
+        path: "/furniture",
+        element: <Furniture />,
+      },
+      {
+        path: "/Rockpaperscissors",
+        element: <Rockpaperscissors />,
+      },
+      {
+        path: "/GardenProducts",
+        element: <GardenProducts />,
+      },
+      {
+        path: "/AutoProducts",
+        element: <AutoProducts />,
+      },
+      {
+        path: "/Decoration",
+        element: <Decoration />,
+      },
+
+    ]
+  },
+
+]);
 
 
 function App() {
-  const a = 5
-  const b = 12
-  console.log(a + b);
-  return (
-    <div className="App">
-      <Counter />
-      <Counter />
-      <Counter />
-      <Counter />
-      <Counter />
-      <header className="App-header">
-        <CategoryList />
-        <AboutUs />
-        <FirstBtn src={'main button'} color={'red'} />
-        <img src={logo} className="App-logo" alt="logo" />
-        <FirstBtn src={'first button'} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <AboutUs />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          My first React app
-        </a>
-        <FirstBtn color={'orange'} src={'my orange button'} />
-      </header>
-      <Electronics />
-      <Furniture />
-      <Decoration />
-      <AutoProducts />
-      <GardenProducts />
-    </div>
-  );
+  return <RouterProvider router={router} />
 }
 
 export default App;
