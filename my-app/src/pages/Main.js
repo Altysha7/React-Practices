@@ -11,7 +11,7 @@ export default function Main() {
           <li><Link to='/Decoration'>Decoration</Link></li>
           <li><Link to='/Rockpaperscissors'>Rockpaperscissors</Link></li>
           <li><Link to='/AutoProducts'>AutoProducts</Link></li>
-          <li><Link to='/Counter'>Counter</Link></li>
+          {/* <li><Link to='/Counter'>Counter</Link></li> */}
         </ul>
       </nav>
       <h1>This is main page</h1>

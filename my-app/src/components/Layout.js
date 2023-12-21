@@ -21,4 +21,5 @@ export default function Layout() {
             </footer>
         </>
     )
+
 }

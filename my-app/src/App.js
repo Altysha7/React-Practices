@@ -17,6 +17,7 @@ import {
 } from 'react-router-dom'
 import Main from './pages/Main';
 import Layout from './components/Layout';
+// import { Route, Routes } from 'react-router-dom'
 
 
 
@@ -72,3 +73,24 @@ function App() {
 }
 
 export default App;
+
+
+// function App() {
+//   return (
+//     <>
+//       <Routes>
+//         <Route path='/' element={<Layout />}>
+//           <Route index element={<Main />} />
+
+//           <Route path='furniture' element={<Furniture />} />
+//           <Route path='electronics' element={<Electronics />} />
+//           <Route path='Decoration' element={<Decoration />} />
+//           <Route path='Rockpaperscissors' element={<Rockpaperscissors />} />
+//           <Route path='AutoProducts' element={<AutoProducts />} />
+//         </Route>
+//       </Routes >
+//     </>
+//   )
+// }
+
+// export default App
